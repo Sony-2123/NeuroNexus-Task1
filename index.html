@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <title>Tourisam Website</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#" id="logo"><span>SS</span>&nbsp;travels</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="home">
+    <div class="content">
+      <h5>Welcome to Andhrapradesh</h5>
+      <h1 style="color: black;">Visit <span class="changecontent"></span></h1>
+      <p><b>The More You See it.The More You Love it</b></p>
+      <a class="btn btn-animated" href="#book">Book Place</a>
+    </div>
+  </div>
+
+  <section class="book" id="book">
+    <div class="container">
+      <div class="main-text">
+        <h1><span>Book&nbsp;&nbsp;</span>Now</h1>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="https://img.freepik.com/free-photo/hotel-booking-reservation-travel-reception-concept_53876-124416.jpg?w=740&t=st=1712787952~exp=1712788552~hmac=7f46701cf3c35ca9f6022776cfc00773378212a9a75695a3067f298010f09a8e" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <form action="#">
+            <input type="text" class="form-control" placeholder="Where to" required></br>
+            <input type="text" class="form-control" placeholder="How many " required></br>
+            <input type="date" class="form-control" placeholder="Arrival" required></br>
+            <input type="date" class="form-control" placeholder="Leaving" required></br>
+            <textarea name="text" class="form-control" rows="4" placeholder="Enter your name & details" required></textarea></br>
+            <input type="submit" value="Book Now" class="submit" required>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="main-txt">
+        <h1><span>P</span>ackages</h1>
+      </div>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://www.shutterstock.com/shutterstock/videos/1011270098/thumb/1.jpg?ip=x480" alt="Thirupathi">
+            <div class="card-body">
+              <h3>Thirupathi</h3>
+              <p>Tirupati is a city in the Indian state of Andhra Pradesh. Its Sri Venkateswara Temple sits atop one of the the 7 peaks of Tirumala Hills, attracting scores of Hindu pilgrims. </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>8999/- INR</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://i.ytimg.com/vi/0r2FA3rKq88/maxresdefault.jpg" alt="Vishakapatnam" style="height: 246px;">
+            <div class="card-body">
+              <h3>Vishakapatnam</h3>
+              <p>Visakhapatnam is a port city and industrial center in the Indian state of Andhra Pradesh, on the Bay of Bengal. It's known for its many beaches, including Ramakrishna Beach, home to a preserved submarine at the Kursura Submarine Museum. Nearby are the elaborate Kali Temple and the Visakha Museum, an old Dutch bungalow housing local maritime and historical exhibits. </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>6999/-INR</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://live.staticflickr.com/3832/9003801757_6551dff860_b.jpg" alt="Anantapur">
+            <div class="card-body">
+              <h3>Anantapur</h3>
+              <p>Anantapur, officially Anantapuramu, is a city in Anantapur district of the Indian state of Andhra Pradesh. its have a Radha Parthasarathi Temple, built by the International Society for Krishna Consciousness (ISKCON) in Anantaprur, was inaugurated in February 2008.</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>4999/-INR</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://static2.tripoto.com/media/filter/tst/img/829101/TripDocument/1568184094_dji_0189.jpg" alt="Gandikota">
+            <div class="card-body">
+              <h3>Gandikota</h3>
+              <p>Gandikota is a village and historical fort on the right bank of the Penna river, 15 km from Jammalamadugu in Kadapa district, Andhra Pradesh, India. The fort was the centre of power for various dynasties, such as the Kalyani Chalukyas, Pemmasani Nayakas, and the Golconda Sultanate. </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>4799/-INR</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/d0/ff/e9/nandi-statue.jpg" alt="Lepakshi">
+            <div class="card-body">
+              <h3>Lepakshi</h3>
+              <p>Lepakshi is a village in the Sri Sathya Sai district of Andhra Pradesh, India. It is located 15 km east of Hindupur and approximately 82 km west of Kadiri and 120 km north of Bangalore. The famous Veerabhadra Temple is located in the village. </p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>4299/-INR</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://www.shutterstock.com/image-photo/araku-valley-beauties-hill-house-600nw-1559121689.jpg" alt="Araku">
+            <div class="card-body">
+              <h3>Araku Valley</h3>
+              <p>Experience Pakistan's blend - where history, natural beauty, and hospitality create a journey.</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h6>Price: <strong>5999/-INR</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="container">
+      <div class="main-txt">
+        <h1><span>S</span>ervices</h1>
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-hotel"></i>
+            <div class="card-body">
+              <h3>Affordable Hotel</h3>
+              <p>Discover comfort without compromise at our selection of affordable hotels, where quality meets affordability for an unforgettable stay.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-utensils"></i>
+            <div class="card-body">
+              <h3>Food and Drinks</h3>
+              <p>Savor a culinary journey with our exquisite food and drinks, crafted to delight your palate and enhance your experience.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-hiking"></i>
+            <div class="card-body">
+              <h3>Adventure Activities</h3>
+              <p>Experience fun adventures with our curated selection of activities, ensuring unforgettable moments of excitement.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" style="margin-top: 30px;">
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="card-body">
+              <h3>Guided Tours</h3>
+              <p>Offer personalized and guided tours led by experienced local guides to enhance the visitor's vacation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-bus"></i>
+            <div class="card-body">
+              <h3>Transportation Services</h3>
+              <p>Provide transportation options such as airport transfers, private car services, or rentals to ensure visitor's comfort.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <i class="fas fa-camera"></i>
+            <div class="card-body">
+              <h3>Photography Services</h3>
+              <p>Partner with local photographers to offer professional photoshoots for travelers who want to capture their memories.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+
+      <div class="main-txt">
+        <h1><span>G</span>allery</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://vizagtourism.org.in/images/places-to-visit/header/araku-valley-vizag-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Egypt" style="height: 250px;">
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1609854534028-b512f5246abc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmlzYWtoYXBhdG5hbXxlbnwwfHwwfHx8MA%3D%3D" alt="Egypt" style="height: 250px;">
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://content.tupaki.com/twdata/2020/0820/news/Amaravati-Protests-Now-Limited-To-Just-29-Villages-1597994781-1111.jpg" alt="Egypt" style="height: 250px;">
+          </div>
+        </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://static.india.com/wp-content/uploads/2022/08/Gandhikota-fea-f.jpg?impolicy=Medium_Widthonly&w=700" alt="Egypt" style="height: 250px;">
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://wallpaperaccess.com/full/3479485.jpg" alt="Egypt" style="height: 250px;">
+          </div>
+        </div>
+
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/a3/2a/46/a32a46d56cc025f39ca33cece5d78b4e.jpg" alt="Egypt" style="height: 250px;">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  </br>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="main-txt">
+        <h1><span>About</span> Us</h1>
+      </div>
+
+      <div class="row" style="margin-top: 50px;">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="https://st4.depositphotos.com/8509220/31642/i/450/depositphotos_316423280-stock-photo-travel-more-concept-woman-traveler.jpg" alt="About">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <h2>Explore with Us: Your Journey, Your Way</h2>
+          <p>Welcome to Travels, where passion for exploration meets personalized service. With a commitment to crafting unforgettable journeys, we specialize in curating unique travel experiences tailored to your desires. Discover the world with us and embark on a seamless and enriching adventure of a lifetime.</p>
+          <button>Know more...</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <h1><span>SS&nbsp;</span>Travel</h1>
+    <p>The More You See it.The More You Love it</p>
+    <div class="social-links">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+  </footer>
+<footer>
+    <center>@copy rights 2024 SS travels - P Sony </center>
+</footer>
+  
+
+</body>
+
+</html>

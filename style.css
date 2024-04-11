@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar {
+    background:whitesmoke;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(48, 43, 43);
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color:darkgreen
+}
+
+.navbar-toggler span {
+    color:blue;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    color:red;
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    border-radius: 0px 7px 0px 7px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #f81d1d;
+    color:greenyellow;
+}
+
+#navbar form button {
+    background:goldenrod;
+    color:black;
+    border: none;
+}
+
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://imgcld.yatra.com/ytimages/image/upload/v1466489832/Kadapa_Map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 1px 2px 2px red;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: '';
+    color:#f81d1d;
+    animation: changetxt 10s infinite linear;
+}
+
+@keyframes changetxt {
+    0% { content: 'Araku Valley'; }
+    10% { content: 'Visakhapatnam'; }
+    20% { content: 'Amaravathi'; }
+    30% { content: 'Gandikota'; }
+    40% { content: 'Tirupati'; }
+    50% { content: 'Vijayawada'; }
+    60% { content: 'Anantapur'; }
+    70% { content: 'Srisailam'; }
+    80% { content: 'Chitoor'; }
+    90% { content: 'Kurnool'; }
+    100% { content: 'Lepakshi'; }
+}
+
+.home .content p {
+    color:aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content .btn:link,
+.home .content .btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    transition: all .2s;
+    border-radius: 100px;
+    position: relative;
+    background-color: white;
+}
+
+.home .content .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    background:#f81d1d;
+    color: whitesmoke
+}
+
+.home .content .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.home .content .btn::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.home .content .btn-animated {
+    animation: moveInBottom 0.5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+    .home .content h1 {
+        font-size: 38px;
+    }
+    .home .content p {
+        font-size: 13px;
+    }
+}
+
+.book {
+    background: #F5F5DC;
+    padding: 30px;
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text h1 span {
+    color: #f81d1d;
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+    margin-top: 25px;
+}
+
+.book form input {
+    color: black;
+    outline:none;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    resize: none;
+    height: 190px;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #f81d1d;
+    color: white;
+    margin-top: 5px;
+    transition: all .5s;
+}
+
+.book .submit:active {
+    transform: translateY(2px);
+}
+
+.book .card img {
+    height: 550px;
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+@media (max-width: 765px) {
+    .book {
+        padding: 0;
+    }
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+.packages {
+    padding: 15px 0px;
+}
+
+.packages .card img {
+    height: 270px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-txt h1 span {
+    color: #f81d1d;
+}
+
+.packages .card {
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 12px;
+}
+
+.packages .card img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.packages .card .card-body {
+    background: transparent;
+}
+
+.packages .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card .card-body p {
+    font-size: 15px;
+}
+
+.checked {
+    color: #f81d1d;
+}
+
+.star i {
+    font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.packages .card .card-body a {
+    padding: 12px 40px;
+    background: #f81d1d;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.services {
+    background: #f9f9f9;
+    margin-top: 50px;;
+}
+
+.services .card {
+    box-shadow: 0px 5px 5px -6px black;
+    border: none;
+    cursor: pointer;
+}
+
+.services .card i {
+    font-size: 80px;
+    text-align: center;
+    color: #f81d1d;
+    margin-top: 20px;
+}
+
+.services .card .card-body h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.services .card .card-body {
+    text-align: center;
+}
+
+.gallery {
+    margin-top: 50px;
+}
+
+.gallery .card {
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 12px;
+    cursor: pointer;
+}
+
+.gallery .card img {
+    border-radius: 10px;
+    transition: 0.5s;
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.gallery .card img:hover {
+    transform: scale(1.1);
+}
+
+.about {
+    margin-top: 50px;
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.about .card {
+    border-radius: 10px;
+}
+
+.about .card img {
+    border-radius: 10px;
+    height: 4%;
+}
+
+.about .card h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about .card p {
+    font-weight: 500;
+}
+
+.about button {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #f81d1d;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+}
+
+.about button:active {
+    transform: translateY(3px);
+    color: white;
+}
+
+.about button:hover {
+    color: white;
+}
+
+@media (max-width: 765px) {
+    .about {
+        padding: 0;
+    }
+}
+
+#footer {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+
+#footer h1 {
+    font-weight: 600;
+    padding-top: 30px;
+    color: white;
+}
+
+#footer h1 span {
+    color:#f81d1d;
+}
+
+#footer p {
+    color: white;
+}
+
+.social-links i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: white;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover {
+    transform: scale(1.3);
+}
